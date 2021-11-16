@@ -14,3 +14,15 @@ Documenting my journey into kube pi clustering
 1 - Install Rasbian lite on SD cards
   - Download Rasberry Imaging tool - https://www.raspberrypi.org/software/
   - Load latest version of Rasbiean Lite onto SD cards (2021-01-11 at time of writing)
+2 - Change password from default (security is important)
+3 - Enable SSH
+  - Several ways to do this, but I happen to have setup easy console access.
+    - Login via console
+    - `sudo raspi-config`
+    - Select `Interfacing Options`
+    - Select `SSH` and enable it
+    - Exit
+4 - Upgrade to latest version of Rasbian becuase you put off doing this for over 6 months :D.
+  - `sudo apt update`
+  - `sudo apt full-upgrade`
+  - `sudo reboot`
